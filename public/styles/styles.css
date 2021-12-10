@@ -1,0 +1,50 @@
+@import "typography.css";
+@import "common.css";
+@import "form.css";
+@import "auth.css";
+@import "details.css";
+@import "search.css";
+@import "login-register.css";
+@import "create-edit.css";
+@import "homePage.css";
+@import "all-games.css";
+@import "navigation.css";
+@import "header.css";
+@import "footer.css";
+@import "comments.css";
+@import "blog.css";
+
+@import url("https://use.fontawesome.com/releases/v5.15.4/css/all.css");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Roboto:wght@400;500&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-image: url('../images/Smoke\ 1.png');
+
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+
+
+
+
+
+@media all and (max-width: 1150px) {
+   
+}
+
+
+
+@media all and (max-width: 1200px) {
+    
+}
+
+
+@media all and (max-width: 1200px) {
+    
+}
+
