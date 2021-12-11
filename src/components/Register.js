@@ -2,35 +2,44 @@ import { Link } from 'react-router-dom';
 import { useState } from 'react';
 
 const Register = () => {
-const [password, setEmail] = useState('');
-const [email, setPassword] = useState('');
+const [email, setEmail] = useState('');
+const [password, setPassword] = useState('');
 
     function registerSubmitHandler(e) {
         e.preventDefault();
 
-        const serverUrl = 'http://localhost:3001';
-        const fetchAPI = {
-            post: (url, data) => {
-                return fetch(url, {
-                    method: 'POST',
-                    credentials: 'include',
-                    headers: {
-                        'Content-Type': 'application/json'
-                    },
-                    body: JSON.stringify(data)
-                })
-                    .then(res => res.json());
-            },};
-        const UserService = {
-            register: (userData) => fetchAPI.post(`${serverUrl}/api/user/register` , userData),
-        };
-        UserService
-                .register({ email, password })
-                .then(res => {
-                    if (res.err) {throw new Error(res.message);};
-                    console.log(res);
-                })
-                .catch(console.error);
+        const serverUrl = 'http://localhost:3030';
+
+        const post = fetch(`{serverUrl}/users/Register`, {
+            method: 'POST',
+            headers: {
+             'Content-Type': 'application/json'
+             },
+            body: JSON.stringify({})
+        })
+        .then(res => res.json());
+        // const fetchAPI = {
+        //     post: (url, data) => {
+        //         return fetch(url, {
+        //             method: 'POST',
+        //             credentials: 'include',
+        //             headers: {
+        //                 'Content-Type': 'application/json'
+        //             },
+        //             body: JSON.stringify(data)
+        //         })
+        //             .then(res => res.json());
+        //     },};
+        // const UserService = {
+        //     register: (userData) => fetchAPI.post(`${serverUrl}/users/register` , userData),
+        // };
+        // UserService
+        //         .register({ email, password })
+        //         .then(res => {
+        //             if (res.err) {throw new Error(res.message);};
+        //             console.log(res);
+        //         })
+        //         .catch(console.error);
     }
 
     return (

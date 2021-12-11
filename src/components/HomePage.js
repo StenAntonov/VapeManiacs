@@ -18,6 +18,7 @@ const HomePage = () => {
 
                 <div id="home-page">
                     <h1 className="latest-models">Latest Models</h1>
+                    <section className='vapes'>
                     <div className="vape">
                         <div className="image-wrap">
                             <img src="/images/arcfox_prism_rainbow_1.jpg" />
@@ -55,6 +56,7 @@ const HomePage = () => {
                         </div>
                     </div>
                     {/* <p className="no-articles">No games yet</p> */}
+                    </section>
                 </div>
             </section >
         </>

@@ -3,7 +3,7 @@ import Footer from './components/Footer';
 import Header from './components/Header';
 import HomePage from './components/HomePage';
 import Blog from './components/Blog';
-import Catalog from './components/Catalog';
+import Catalog from './components/VapeCatalog/VapeCatalog';
 import Create from './components/Create';
 import MyVapes from './components/MyVapes';
 import Details from './components/Details';

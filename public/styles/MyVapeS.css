@@ -1,6 +1,6 @@
 #catalog-page {
     background-color: transparent;
-    box-shadow: 0px 0px 40px 0px;
+    box-shadow: 0px 0px 30px 3px #ecf0f3;
     overflow: hidden;
     border-radius: 10px;
     padding: 20px;
@@ -49,20 +49,21 @@
     width: 140px;
 }
 
-.allVapes-info>h6 {
-    font-size: 20px;
+.allVapes-info>h4 {
+    font-size: 23px;
     font-weight: 750;
     color: #161618;
 }
 
-.allGames-info>h2 {
-    font-size: 20px;
+.allVapes-info>h2 {
+    font-size: 34px;
     font-weight: 750;
     color: #161618;
+    padding-bottom: 0px;
 }
 
 .details-button {
-    background-color: #2A265F;
+    background-color: #9CA797;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
     color: #fff;
     font-size: 20px;
@@ -72,6 +73,7 @@
     letter-spacing: 1px;
     padding: 10px;
     margin-top: auto;
-    margin-left: 20px;
+    margin-left: 15px;
+    border-radius: 16px;
 }
 

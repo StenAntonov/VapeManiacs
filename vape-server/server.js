@@ -1360,8 +1360,23 @@
                 "imageUrl": "/images/ZombieLang.png",
                 "summary": "With it’s own unique story, set between the events of the first movie, Zombieland: Double Tap- Road Trip is a ridiculously fun top-down twin-stick shooter featuring local co-op multiplayer for up to four players. Play as your favorite heroes from the original — Tallahassee, Columbus, Wichita and Little Rock — as well as new unlockable characters from the upcoming sequel.  The game embraces the game-like elements seen in the film by  incorporating everything from the “Rules” to “Zombie Kill of the Week”.  Use your special abilities, an arsenal of weapons and the essential Zombieland rules for survival to stay alive against huge numbers of uniquely grotesque and dangerous undead monstrosities in Zombieland: Double Tap- Road Trip’s story-based campaign mode, wave-based horde mode, and boss battles.",
                 "_createdOn": 1617194295474,
+            },
+			"1216sdf7-5249-62fr-f895-16632gkz67fg": {
+                "_ownerId": "275foj956-j457-8548-4190-6157av94g57a",
+                "maker": "Smok",
+                "model": "Arcfox",
+                "battery": "18650 x2",
+                "imageUrl": "/images/arcfox_prism_rainbow_1.jpg",
+                "Description": "The new Arcfox sub-ohm kit from Smok is seamless blend of brawn and brains, with a mighty 230W max power output provided by two external 18650 batteries (sold separately) and a host of intelligent modes and functions designed to give you maximum control of your vaping. One of the most durable devices Smok has ever produced, the Arcfox is rated IP67 with a shockproof, waterproof and dustproof design that means your Arcfox can withstand any environment – ideal for vapers who lead an active, outdoors lifestyle. The Arcfox’s cutting-edge chipset gives you a choice of modes for ultimate control over your vaping - choose from VW mode (5 - 230W) or TC mode (10 - 80W). The Arcfox mod features a user-friendly 0.90” TFT colour screen that displays all your essential data such as battery life, wattage and mode information.",
+                "_createdOn": 1617194295474,
             }
         },
+		vapes: {
+			"1216sdf7-5249-62fr-f895-16632gkz67fg": {
+			"maker": "Smok",
+			"model": "Arcfox"
+			}
+		},
         comments: {
         
         }

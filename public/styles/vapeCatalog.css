@@ -1,0 +1,85 @@
+#catalog-page {
+    background-color: transparent;
+    box-shadow: 0px 0px 30px 3px #ecf0f3;
+    border-radius: 30px;
+    padding: 20px;
+    height: auto;
+    width: 100%;
+}
+
+.catalog-page-vapes {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#catalog-page>h1 {
+    color: #fff;
+    font-family: "Agency FB";
+    font-size: 84px;
+    font-weight: 700;
+    margin-top: 10px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.allVapes {
+    background-color: #fff;
+    border-radius: 30px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    max-width: 100%;
+    margin: 15px;
+    overflow: hidden;
+    width: 400px;
+    min-height: 210px;
+    height: auto;
+}
+
+.allVapes-info {
+    padding: 30px;
+    position: relative;
+    width: 380px;
+}
+
+.allVapes-info>img {
+    margin-top: 5px;
+    border-radius: 50%;
+    height: 140px;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    float: right;
+    padding: 5px;
+    width: 140px;
+    border: 1px solid;
+    box-shadow: 1px 1px 35px 6px black;
+}
+
+.allVapes-info>h4 {
+    font-size: 23px;
+    font-weight: 750;
+    color: #161618;
+}
+
+.allVapes-info>h2 {
+    font-size: 34px;
+    font-weight: 750;
+    color: #161618;
+    padding-bottom: 0px;
+}
+
+.details-button {
+    background-color: #9CA797;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    font-size: 20px;
+    position: absolute;
+    bottom: 30px;
+    text-align: left;
+    letter-spacing: 1px;
+    padding: 10px;
+    margin-top: auto;
+    margin-left: 15px;
+    border-radius: 16px;
+}
