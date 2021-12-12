@@ -10,12 +10,12 @@ const [password, setPassword] = useState('');
 
         const serverUrl = 'http://localhost:3030';
 
-        const post = fetch(`{serverUrl}/users/Register`, {
+       fetch(`${serverUrl}/users/Register`, {
             method: 'POST',
             headers: {
              'Content-Type': 'application/json'
              },
-            body: JSON.stringify({})
+            body: JSON.stringify({email, password})
         })
         .then(res => res.json());
         // const fetchAPI = {

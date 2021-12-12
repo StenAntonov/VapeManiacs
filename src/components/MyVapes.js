@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 const MyVapes = () => {
     return (
         <section id="catalog-page">
-            <h1>All Vapes</h1>
+            <h1>My Vapes</h1>
             {/* <!-- Display div: with information about every game (if any) --> */}
             <div className="allVapes">
                 <div className="allVapes-info">

@@ -1,9 +1,6 @@
-import { a }from "react-router-dom";
-
-const Blog = () => {
+const Carousel = () => {
     return (
-        <section className="video-blog">
-            <h2 className="video-blog-heading">Video Blog:</h2>
+        <section className="carousel">
             <div className="carousel-wrapper">
                 <span id="item-2"></span>
                 <span id="item-3"></span>
@@ -26,4 +23,4 @@ const Blog = () => {
         </section>
     );
 };
-export default Blog;
+export default Carousel;

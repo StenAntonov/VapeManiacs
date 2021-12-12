@@ -7,7 +7,7 @@ const Footer = () => {
                 <article className="icons">
                     <a href="https://www.facebook.com/groups/1120140004818933"><i className="fab fa-facebook-f"></i></a>
                     <a href="https://twitter.com/beardvapeco"><i className="fab fa-twitter"></i></a>
-                    <a href="https://www.pinterest.com/trilogyfarm/vaping/"><i class="fab fa-pinterest"></i></a>
+                    <a href="https://www.pinterest.com/trilogyfarm/vaping/"><i className="fab fa-pinterest"></i></a>
                     <a href="https://www.youtube.com/c/RiPTrippers1"><i className="fab fa-youtube"></i></a>
                     <a href="https://www.instagram.com/riptrippers/?hl=bg"><i className="fab fa-instagram"></i></a>
                 </article>
