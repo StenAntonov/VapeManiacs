@@ -1,4 +1,4 @@
-import { a }from "react-router-dom";
+import LatestCard from "./HomePage/LatestCard";
 
 const Blog = () => {
     return (

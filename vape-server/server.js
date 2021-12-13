@@ -1360,22 +1360,83 @@
                 "imageUrl": "/images/ZombieLang.png",
                 "summary": "With it’s own unique story, set between the events of the first movie, Zombieland: Double Tap- Road Trip is a ridiculously fun top-down twin-stick shooter featuring local co-op multiplayer for up to four players. Play as your favorite heroes from the original — Tallahassee, Columbus, Wichita and Little Rock — as well as new unlockable characters from the upcoming sequel.  The game embraces the game-like elements seen in the film by  incorporating everything from the “Rules” to “Zombie Kill of the Week”.  Use your special abilities, an arsenal of weapons and the essential Zombieland rules for survival to stay alive against huge numbers of uniquely grotesque and dangerous undead monstrosities in Zombieland: Double Tap- Road Trip’s story-based campaign mode, wave-based horde mode, and boss battles.",
                 "_createdOn": 1617194295474,
+            }
+        },
+        latest: {
+            "ff436770-76c5-40e2-b231-77409eda7a61": {
+                "_ownerId": "35c62d76-8152-4626-8712-eeb96381bea8",
+                "maker": "OBS",
+                "model": "Engine",
+                "battery": "18650 x1",
+                "imageUrl": "/images/obs-engine-100w-gunmetal-puzzle-purple_1.jpg",
+                "description": "The new OBS Engine vape kit is a powerful sub-ohm kit capable of a mighty 100w max power, yet all contained in a device that fits snugly into the hand and looks great too. Available in a variety of looks, the OBS Engine goes even further and lets you swap out the battery sleeve for another design for true customisation. The OBS Engine box Mod is powered by a single 18650/20700/21700 battery (sold separately) with super-fast Type-C charging. All your information and data is displayed on a crystal-clear 0.96-inch LED screen. A tactile fire button and power adjustments make up the only interface you need to operate the device. Crowning the OBS Engine vape kit is the advanced Engine S Tank, a hugely impressive sub ohm vaping tank that utilises OBS’ newly designed E Mesh Series of coils to truly get the best flavour out of your favourite e-liquid. The tank has a 2ml capacity with a simple top fill system and adjustable bottom airflow for a rich, smooth and flavoursome DL (direct to lung) draw. The included The E1 mesh coil has a resistance of 0.4ohm and a recommended wattage range of 45W - 55W and the E2 mesh coil has a resistance of 0.2ohm and for use between 50W - 70W. Both coils work best with High-VG e-liquids. ",
+                "_createdOn": 1617194128618,
             },
+            "1840a313-225c-416a-817a-9954d4609f7c": {
+                "_ownerId": "156fg548-1684-6915-1537-156hw957dg75",
+                "maker": "GeekVape",
+                "model": "Aegis Legend 2",
+                "battery": "18650 x2",
+                "imageUrl": "/images/geekvape-aegis-legend-2-rainbow_1.jpg",
+                "description": "The legend continues with GeekVape’s latest powerhouse: the Aegis Legend 2 sub-ohm kit. Capable of a max power output of 200W, powered by two 18650 batteries (sold separately), the GeekVape Aegis Legend 2 is a sub-ohm dream machine, built to produce incredible clouds and immaculate flavour from your favourite e-liquid. The new Legend 2 is 30% lighter than its predecessor, but still bears all the Aegis hallmarks of durability, quality and comfortable ergonomics. This Legend 2 is dustproof, waterproof and shockproof and fits beautifully in the hand thanks to high-grade industrial materials and grippy leather and rubber trim. The mod offers unparalleled customisation for vape enthusiasts, with multiple modes including variable wattage mode, variable power curve mode, temperature control mode and bypass mode. The advanced chipset incorporates a host of safety protections as well as intelligent coil recognition, while a new larger 1.03” screen on the front allows you to view and change your settings to suit your preferred vaping style. A handy sliding lock switch on the side protects your settings.",
+                "_createdOn": 1617194210928,
+            },
+            "1216sdf7-5249-62fr-f895-16632gkz67fg": {
+                "_ownerId": "275foj956-j457-8548-4190-6157av94g57a",
+                "maker": "Smok",
+                "model": "Arcfox",
+                "battery": "18650 x2",
+                "imageUrl": "/images/arcfox_prism_rainbow_1.jpg",
+                "description": "The new Arcfox sub-ohm kit from Smok is seamless blend of brawn and brains, with a mighty 230W max power output provided by two external 18650 batteries (sold separately) and a host of intelligent modes and functions designed to give you maximum control of your vaping. One of the most durable devices Smok has ever produced, the Arcfox is rated IP67 with a shockproof, waterproof and dustproof design that means your Arcfox can withstand any environment – ideal for vapers who lead an active, outdoors lifestyle. The Arcfox’s cutting-edge chipset gives you a choice of modes for ultimate control over your vaping - choose from VW mode (5 - 230W) or TC mode (10 - 80W). The Arcfox mod features a user-friendly 0.90” TFT colour screen that displays all your essential data such as battery life, wattage and mode information.",
+                "_createdOn": 1617194295474,
+            },
+            "126777f5-3277-42ad-b874-76d043b069cb": {
+                "_ownerId": "847ec027-f659-4086-8032-5173e2f9c93a",
+                "maker": "Vaporesso",
+                "model": "Luxe 80 S",
+                "battery": "18650 x1",
+                "imageUrl": "/images/vaporesso-luxe-80-s-blue.jpg",
+                "description": "The LUXE 80 S is the newest 80W Pod Mod to debut from Vaporesso’s LUXE series. It offers a powerful and versatile vaping experience in a super compact and rugged form while being housed in premium, luxurious materials. The Luxe 80 S Pod Kit is powered by an external 18650 battery (sold separately) with a maximum power output of 80W. Beneath the hood is Vaporesso’s advanced AXON chipset which incorporates a host of safety features and enables a super-fast fire time of 0.001s. All your usage data is displayed on a crystal-clear TFT screen, and the Luxe 80 supports incredibly fast USB-C charging. Crowning the luxe S is a precision-engineered pod tank, built for sublime flavour and cloud production. The tank features a simple to-fill system, adjustable airflow and compatibility with Vaporesso’s industry-leading GTX Coils. Available in several stunning designs, the Luxe S 80 Pod kit from Vaporesso is a truly luxurious vape kit that feels great in the hand and delivers stunning flavour and performance.",
+                "_createdOn": 1617194295357,
+            }
+        },
+		vapes: {
 			"1216sdf7-5249-62fr-f895-16632gkz67fg": {
                 "_ownerId": "275foj956-j457-8548-4190-6157av94g57a",
                 "maker": "Smok",
                 "model": "Arcfox",
                 "battery": "18650 x2",
                 "imageUrl": "/images/arcfox_prism_rainbow_1.jpg",
-                "Description": "The new Arcfox sub-ohm kit from Smok is seamless blend of brawn and brains, with a mighty 230W max power output provided by two external 18650 batteries (sold separately) and a host of intelligent modes and functions designed to give you maximum control of your vaping. One of the most durable devices Smok has ever produced, the Arcfox is rated IP67 with a shockproof, waterproof and dustproof design that means your Arcfox can withstand any environment – ideal for vapers who lead an active, outdoors lifestyle. The Arcfox’s cutting-edge chipset gives you a choice of modes for ultimate control over your vaping - choose from VW mode (5 - 230W) or TC mode (10 - 80W). The Arcfox mod features a user-friendly 0.90” TFT colour screen that displays all your essential data such as battery life, wattage and mode information.",
+                "description": "The new Arcfox sub-ohm kit from Smok is seamless blend of brawn and brains, with a mighty 230W max power output provided by two external 18650 batteries (sold separately) and a host of intelligent modes and functions designed to give you maximum control of your vaping. One of the most durable devices Smok has ever produced, the Arcfox is rated IP67 with a shockproof, waterproof and dustproof design that means your Arcfox can withstand any environment – ideal for vapers who lead an active, outdoors lifestyle. The Arcfox’s cutting-edge chipset gives you a choice of modes for ultimate control over your vaping - choose from VW mode (5 - 230W) or TC mode (10 - 80W). The Arcfox mod features a user-friendly 0.90” TFT colour screen that displays all your essential data such as battery life, wattage and mode information.",
                 "_createdOn": 1617194295474,
+            },
+            "126777f5-3277-42ad-b874-76d043b069cb": {
+                "_ownerId": "847ec027-f659-4086-8032-5173e2f9c93a",
+                "maker": "Vaporesso",
+                "model": "Luxe 80 S",
+                "battery": "18650 x1",
+                "imageUrl": "/images/vaporesso-luxe-80-s-blue.jpg",
+                "description": "The LUXE 80 S is the newest 80W Pod Mod to debut from Vaporesso’s LUXE series. It offers a powerful and versatile vaping experience in a super compact and rugged form while being housed in premium, luxurious materials. The Luxe 80 S Pod Kit is powered by an external 18650 battery (sold separately) with a maximum power output of 80W. Beneath the hood is Vaporesso’s advanced AXON chipset which incorporates a host of safety features and enables a super-fast fire time of 0.001s. All your usage data is displayed on a crystal-clear TFT screen, and the Luxe 80 supports incredibly fast USB-C charging. Crowning the luxe S is a precision-engineered pod tank, built for sublime flavour and cloud production. The tank features a simple to-fill system, adjustable airflow and compatibility with Vaporesso’s industry-leading GTX Coils. Available in several stunning designs, the Luxe S 80 Pod kit from Vaporesso is a truly luxurious vape kit that feels great in the hand and delivers stunning flavour and performance.",
+                "_createdOn": 1617194295474,
+            },
+            "1840a313-225c-416a-817a-9954d4609f7c": {
+                "_ownerId": "156fg548-1684-6915-1537-156hw957dg75",
+                "maker": "GeekVape",
+                "model": "Aegis Legend 2",
+                "battery": "18650 x2",
+                "imageUrl": "/images/geekvape-aegis-legend-2-rainbow_1.jpg",
+                "description": "The legend continues with GeekVape’s latest powerhouse: the Aegis Legend 2 sub-ohm kit. Capable of a max power output of 200W, powered by two 18650 batteries (sold separately), the GeekVape Aegis Legend 2 is a sub-ohm dream machine, built to produce incredible clouds and immaculate flavour from your favourite e-liquid. The new Legend 2 is 30% lighter than its predecessor, but still bears all the Aegis hallmarks of durability, quality and comfortable ergonomics. This Legend 2 is dustproof, waterproof and shockproof and fits beautifully in the hand thanks to high-grade industrial materials and grippy leather and rubber trim. The mod offers unparalleled customisation for vape enthusiasts, with multiple modes including variable wattage mode, variable power curve mode, temperature control mode and bypass mode. The advanced chipset incorporates a host of safety protections as well as intelligent coil recognition, while a new larger 1.03” screen on the front allows you to view and change your settings to suit your preferred vaping style. A handy sliding lock switch on the side protects your settings.",
+                "_createdOn": 1617194210928,
+            },
+            "ff436770-76c5-40e2-b231-77409eda7a61": {
+                "_ownerId": "35c62d76-8152-4626-8712-eeb96381bea8",
+                "maker": "OBS",
+                "model": "Engine",
+                "battery": "18650 x1",
+                "imageUrl": "/images/obs-engine-100w-gunmetal-puzzle-purple_1.jpg",
+                "description": "The new OBS Engine vape kit is a powerful sub-ohm kit capable of a mighty 100w max power, yet all contained in a device that fits snugly into the hand and looks great too. Available in a variety of looks, the OBS Engine goes even further and lets you swap out the battery sleeve for another design for true customisation. The OBS Engine box Mod is powered by a single 18650/20700/21700 battery (sold separately) with super-fast Type-C charging. All your information and data is displayed on a crystal-clear 0.96-inch LED screen. A tactile fire button and power adjustments make up the only interface you need to operate the device. Crowning the OBS Engine vape kit is the advanced Engine S Tank, a hugely impressive sub ohm vaping tank that utilises OBS’ newly designed E Mesh Series of coils to truly get the best flavour out of your favourite e-liquid. The tank has a 2ml capacity with a simple top fill system and adjustable bottom airflow for a rich, smooth and flavoursome DL (direct to lung) draw. The included The E1 mesh coil has a resistance of 0.4ohm and a recommended wattage range of 45W - 55W and the E2 mesh coil has a resistance of 0.2ohm and for use between 50W - 70W. Both coils work best with High-VG e-liquids. ",
+                "_createdOn": 1617194128618,
             }
-        },
-		vapes: {
-			"1216sdf7-5249-62fr-f895-16632gkz67fg": {
-			"maker": "Smok",
-			"model": "Arcfox"
-			}
 		},
         comments: {
         

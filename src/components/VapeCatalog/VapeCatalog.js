@@ -1,7 +1,7 @@
-import { useEffect } from 'react';
 import { useState } from 'react';
-import VapeCard from './VapeCard';
+import { useEffect } from 'react';
 import * as vapeService from '../../services/vapeService.js';
+import VapeCard from './VapeCard';
 
 const VapeCatalog = () => {
     const [vapes, setVapes] = useState([]);
@@ -15,7 +15,7 @@ const VapeCatalog = () => {
 
 
     return (
-        <section id="catalog-page">
+        <section className="catalog-page">
             <h1>Vapes Catalog</h1>
 
             <section className="catalog-page-vapes">
