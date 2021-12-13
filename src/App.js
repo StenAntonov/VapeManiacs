@@ -6,12 +6,13 @@ import Blog from './components/Blog';
 import Catalog from './components/VapeCatalog/VapeCatalog';
 import Create from './components/Create';
 import MyVapes from './components/MyVapes';
-import Details from './components/Details';
+import Details from './components/Details/Details';
 import Edit from './components/Edit';
 import AboutUs from './components/AboutUs';
 import Login from './components/Login';
 import Register from './components/Register';
 import Contacts from './components/Contacts';
+import NotFound from './components/NotFound';
 
 function App() {
     return (
@@ -31,6 +32,7 @@ function App() {
                     <Route path="/contacts" element={<Contacts />} />
                     <Route path="/details" element={<Details />} />
                     <Route path="/my-vapes" element={<MyVapes />} />
+                    <Route path="*" element={<NotFound />} />
                 </Routes>
             </main>
             

@@ -1,5 +1,3 @@
-import LatestCard from "./HomePage/LatestCard";
-
 const Blog = () => {
     return (
         <section className="video-blog">

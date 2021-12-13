@@ -1363,15 +1363,6 @@
             }
         },
         latest: {
-            "ff436770-76c5-40e2-b231-77409eda7a61": {
-                "_ownerId": "35c62d76-8152-4626-8712-eeb96381bea8",
-                "maker": "OBS",
-                "model": "Engine",
-                "battery": "18650 x1",
-                "imageUrl": "/images/obs-engine-100w-gunmetal-puzzle-purple_1.jpg",
-                "description": "The new OBS Engine vape kit is a powerful sub-ohm kit capable of a mighty 100w max power, yet all contained in a device that fits snugly into the hand and looks great too. Available in a variety of looks, the OBS Engine goes even further and lets you swap out the battery sleeve for another design for true customisation. The OBS Engine box Mod is powered by a single 18650/20700/21700 battery (sold separately) with super-fast Type-C charging. All your information and data is displayed on a crystal-clear 0.96-inch LED screen. A tactile fire button and power adjustments make up the only interface you need to operate the device. Crowning the OBS Engine vape kit is the advanced Engine S Tank, a hugely impressive sub ohm vaping tank that utilises OBS’ newly designed E Mesh Series of coils to truly get the best flavour out of your favourite e-liquid. The tank has a 2ml capacity with a simple top fill system and adjustable bottom airflow for a rich, smooth and flavoursome DL (direct to lung) draw. The included The E1 mesh coil has a resistance of 0.4ohm and a recommended wattage range of 45W - 55W and the E2 mesh coil has a resistance of 0.2ohm and for use between 50W - 70W. Both coils work best with High-VG e-liquids. ",
-                "_createdOn": 1617194128618,
-            },
             "1840a313-225c-416a-817a-9954d4609f7c": {
                 "_ownerId": "156fg548-1684-6915-1537-156hw957dg75",
                 "maker": "GeekVape",
