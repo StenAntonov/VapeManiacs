@@ -21,8 +21,8 @@ const Details = () => {
                     <img className="vape-img" src={vape.imageUrl} />
                     <h1 className='vape-details-h1'>{vape.maker}</h1>
                     <h2 className='vape-details-h2'>{vape.model}</h2>
-                    <span className="batteries">Battery</span>
-                    <p className="type">External, Qty: {vape.battery}</p>
+                    <p className="type">Battery:</p>
+                    <span className="batteries">{vape.battery}</span>
                 </div>
                 <p className="text">{vape.description}</p>
 
