@@ -8,103 +8,73 @@
     width: 100%;
 }
 
-h1 {
-  font-size: 54px;
-  text-transform: uppercase;
-  text-align: center;
-  color: #fff;
-  font-family: 'Odibee Sans', cursive;
-  margin-bottom: 0;
-}
-
-#css {
-  color: yellow;
-  font-family: 'Odibee Sans', cursive;
-}
-
-.carousel-wrapper {
-  height: 500px;
+.second {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(12, 9, 9, 0.479);
+  padding-left: 80px;
   position: relative;
-  width: 1100px;
-  display: block;
-  margin: 50px auto;
-  border: 2px solid black;
-  border-radius: 30px;
+  margin-bottom: 30px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  color: white;
 }
 
-.carousel-item {
+.second-content {
+  width: 933px;
+  padding-right: 80px;
+}
+
+/* .img {
+  width: 520px;
+} */
+
+.image{
+  width: 520px;
+}
+
+.second-content-heading-first {
+  font-size: 24px;
+  font-weight: 100;
+  margin-bottom: 5px;
+  padding-right: 10px;
+  padding-left: 5px;
+  margin-bottom: 30px;
+}
+
+/* .second-content-heading-second {
+  font-size: 50px;
+  font-weight: bold;
+  margin-bottom: 5px;
+} */
+
+.second-content-headings {
+  display: flex;
+  padding-bottom: 20px;
+}
+
+.second-content-text-first, second-content-text-second {
+  font-style: italic;
+}
+
+.second-content-text-second {
+  margin-top: 23px;
+}
+
+/* .second-content-heading-first::before {
+  padding-right: 20px;
+  content: "";
   position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  padding: 25px 50px;
-  opacity: 0;
-  transition: all 1s ease-in-out;
-  margin: 0;
+  background-color: black;
+  width: 60px;
+  height: 1px;
+  margin-top: 34px;
+  right: 870px;
+} */
+
+.link {
+  color: red;
+  text-align: end;
 }
 
-.arrow {
-  border: solid white;
-  border-width: 0 3px 3px 0;
-  display: inline-block;
-  padding: 12px;
-}
-
-.arrow-prev {
-  left: -40px;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%) rotate(135deg);
-
-}
-
-.arrow-next {
-  right: -40px;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%) rotate(-45deg);
-}
-
-[id^="item"] {
-  display: none;
-}
-
-.item-1 {
-  z-index: 2;
-  opacity: 1;
-  background-image: url("/images/Smoking Kills Main-wider.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  border-radius: 30px;
-}
-
-.item-2 {
-  background-image: url('../images/Smoke\ 2.png');
-  background-size: cover;
-  background-size: cover;
-  background-repeat: no-repeat;
-  border-radius: 30px;
-}
-
-.item-3 {
-  background-image: url('../images/Smoke\ 3.png');
-  background-size: cover;
-  background-size: cover;
-  background-repeat: no-repeat;
-  border-radius: 30px;
-}
-
-*:target~.item-1 {
-  opacity: 0;
-}
-
-#item-1:target~.item-1 {
-  opacity: 1;
-
-}
-
-#item-2:target~.item-2, #item-3:target~.item-3 {
-  z-index: 3;
-  opacity: 1;
-}
