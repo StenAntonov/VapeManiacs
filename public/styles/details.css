@@ -6,12 +6,13 @@
     overflow: hidden;
     border-radius: 10px;
     transition: all 0.4s;
+    margin-top: 40px;
 }
 
 #vape-details>h1 {
     color: #fff;
     font-family: "Agency FB";
-    font-size: 55px;
+    font-size: 85px;
     font-weight: 700;
     margin-bottom: 40px;
     text-transform: uppercase;
@@ -34,11 +35,24 @@
     height: 40%;
 }
 
-.vape_header>h1 {
+.vape-details-h1 {
     color: black;
     margin-top: 5px;
-    font-size: 36px;
+    font-size: 60px;
     font-weight: 400;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    padding-bottom: 0;
+}
+
+.vape-details-h2 {
+    color: black;
+    margin-top: 5px;
+    font-size: 50px;
+    font-weight: 400;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    padding-top: 0;
 }
 
 .vape_header>h4 {
@@ -47,7 +61,7 @@
     font-weight: 400;
 }
 
-.levels {
+.batteries {
     display: inline-block;
     margin-top: 15px;
     color: #555;
@@ -75,9 +89,10 @@
 }
 
 .info-section>.text {
-    margin-top: 30px;
     padding: 60px;
     height: 50%;
+    padding-top: 0px;
+    margin-top: 20px;
 }
 
 .vape-summary {

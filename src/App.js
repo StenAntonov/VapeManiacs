@@ -30,7 +30,7 @@ function App() {
                     <Route path="/login" element={<Login />} />
                     <Route path="/register" element={<Register />} />
                     <Route path="/contacts" element={<Contacts />} />
-                    <Route path="/details" element={<Details />} />
+                    <Route path="/details/:id" element={<Details />} />
                     <Route path="/my-vapes" element={<MyVapes />} />
                     <Route path="*" element={<NotFound />} />
                 </Routes>

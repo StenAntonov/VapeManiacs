@@ -3,7 +3,7 @@
 .smoking-dead {
     width: auto;
     padding-right: 15px;
-    padding-top: 7em;
+    padding-top: 45px;
     justify-content: right;
     padding-left: 15px;
     position: relative;
@@ -49,6 +49,7 @@
     text-transform: uppercase;
     text-shadow: 0 2px 4.8px rgba(0, 0, 0, 0.3);
     font-family: "Agency FB";
+    padding-top: 0;
 }
 
 .smoking-dead-message h3 {
@@ -157,8 +158,4 @@
     font-weight: 700;
     font-size: 60px;
     font-family: "Agency FB";
-}
-
-.not-found {
-
 }

@@ -1,10 +1,12 @@
 const NotFound = () => {
     return (
         <>
-        <div id="home-page-vapes">
-                    <h1 className="latest-models">Page Not Found!</h1>
+        <div className="not-found">
+                    <h1 className="not-found-text">Page Not Found!</h1>
+            <article className="not-found-article">
+                    <img className="not-found-pic" src="/images/notFound2.png" alt="page not found" />
+            </article>
         </div>
-                    <i className="fas fa-ghost"></i>
         </>
     );
 };

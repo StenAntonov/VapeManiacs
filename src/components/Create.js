@@ -3,7 +3,6 @@ const Create = () => {
         <section id="create-page" className="auth">
         <form id="create">
             <div className="container">
-
                 <h1>Create Vape</h1>
                 <label htmlFor="leg-title">Legendary title:</label>
                 <input type="text" id="title" name="title" placeholder="Enter game title..." />
