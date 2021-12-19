@@ -28,7 +28,7 @@ const HomePage = () => {
                 <p className="read-more">Read more in the <Link to="/blog" className="read-more-blog">BLOG</Link> section...</p>
 
                 <div className='video'>
-                    <iframe width="1100" height="500" src="https://www.youtube.com/embed/njHSRqE8rUI?start=41" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="1100" height="500" src="https://www.youtube.com/embed/njHSRqE8rUI?start=41" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                 </div>
 
                 <div id="home-page-vapes">

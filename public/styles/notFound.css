@@ -1,0 +1,31 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.not-found {
+    height: 500px;
+}
+
+.not-found-text {
+    padding-top: 5%;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-weight: 700;
+    font-size: 84px;
+    font-family: "Agency FB";
+}
+
+.not-found-article {
+    position: relative;
+}
+
+.not-found-pic {
+    size: 300px;
+    position: relative;
+    left: 432px;
+    bottom: 100px;
+}

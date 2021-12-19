@@ -18,7 +18,7 @@ const Details = () => {
             <h1>Vape Details</h1>
             <div className="info-section">
                 <div className="vape-header">
-                    <img className="vape-img" src={vape.imageUrl} />
+                    <img className="vape-img" src={vape.imageUrl} alt="vapo" />
                     <h1 className='vape-details-h1'>{vape.maker}</h1>
                     <h2 className='vape-details-h2'>{vape.model}</h2>
                     <p className="type">Battery:</p>
@@ -27,8 +27,8 @@ const Details = () => {
                 <p className="text">{vape.description}</p>
 
                 <div className="buttons">
-                    <Link to="/edit" className="button">Edit</Link>
-                    <Link to="/delete" className="button">Delete</Link>
+                    <Link to="/edit" className="button-edit">Edit</Link>
+                    <Link to="/delete" className="button-delete">Delete</Link>
                 </div>
             </div>
         </section>

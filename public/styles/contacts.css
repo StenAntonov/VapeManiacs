@@ -1,0 +1,70 @@
+.content-heading-first {
+    font-family: "Agency FB";
+    font-size: 84px;
+    font-weight: 700;
+}
+
+.form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    width: 46%;
+}
+
+#email, #subject {
+    width: 320px;
+    height: 55px;
+    background-color: #EFEFEF;
+    padding-left: 20px;
+}
+
+#email {
+    margin-right: 45px;
+}
+
+.content-textarea {
+    resize: none;
+    background-color: #EFEFEF;
+    width: 685px;
+    padding: 20px;
+    border: 2px solid black;
+}
+
+.send {
+    width: 685px;
+    height: 55px;
+    background-color: #fd5454;
+    text-align: center;
+    vertical-align: baseline;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding-top: 16px;
+    font-size: 20px;
+    border-radius: 16px;
+}
+
+.send:hover {
+    background-color: rgb(192, 129, 117);
+    color: white;
+}
+
+#Message {
+    margin: 45px 0;
+}
+
+.map {
+    margin-left: 90px;
+    margin-right: 90px;
+}
+
+.sinoptik {
+    margin-left: 38vw;
+    margin-top: 18px;
+}
+
+.google-map {
+    margin-left: 30vw;
+    margin-top: 50px;
+}

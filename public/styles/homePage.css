@@ -82,8 +82,8 @@
     box-sizing: border-box;
     border-radius: 15px;
     float: left;
-    /* height: auto; */
     color: rgb(255, 255, 255);
+    background-color: rgba(12, 9, 9, 0.479);
 }
 
 .image-wrap {
