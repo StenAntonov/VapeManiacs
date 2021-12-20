@@ -5,7 +5,6 @@ const Header = () => {
     // const onLogout = () => {
     //     await vapeService.logout();
     // };
-
     return (
         <header className="header">
             <article className="header-logo">

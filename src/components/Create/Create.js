@@ -1,7 +1,38 @@
+import { useNavigate } from 'react-router-dom';
+
+import * as vapeService from '../../services/vapeService';
+
 const Create = () => {
+    const navigate = useNavigate();
+
+    const onVapeCreate = (e) => {
+        e.preventDefault();
+        let formData = new FormData(e.currentTarget);
+
+        let maker = formData.get('maker');
+        let model = formData.get('model');
+        let batteryType = formData.get('battery-type');
+        let imageUrl = formData.get('imageUrl');
+        let description = formData.get('description');
+
+        console.log(maker, model, batteryType, imageUrl, description);
+
+        vapeService.create({
+            maker,
+            model,
+            batteryType,
+            imageUrl,
+            description
+        })
+            .then(result => {
+                navigate('/catalog');
+            });
+
+    };
+
     return (
         <section id="create-page" className="auth">
-        <form id="create">
+        <form id="create" onSubmit={onVapeCreate}>
             <div className="container">
                 <h1>Create Vape</h1>
                 <label htmlFor="maker">Maker:</label>

@@ -12,14 +12,14 @@
     width: 46%;
 }
 
-#email, #subject {
+.input-email, #subject {
     width: 320px;
     height: 55px;
     background-color: #EFEFEF;
     padding-left: 20px;
 }
 
-#email {
+.input-email {
     margin-right: 45px;
 }
 

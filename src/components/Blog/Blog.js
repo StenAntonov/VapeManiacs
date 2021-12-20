@@ -3,7 +3,7 @@ const Blog = () => {
         <>
             <section className="first">
                 <article className="img">
-                    <img src="/images/mind if I smoke.jpg" alt="smoker" className="image" />
+                    <img src="https://res.cloudinary.com/raggae/image/upload/v1639958293/VapeManiacs/mind_if_I_smoke_xurfnj.jpg" alt="smoker" className="image" />
                 </article>
                 <article className="first-content">
                     <article className="first-content-headings">
@@ -30,7 +30,7 @@ const Blog = () => {
                     </article>
                 </article>
                 <article className="img2">
-                    <img src="/images/mind if I smoke.jpg" alt="smoker" className="image2" />
+                    <img src="https://res.cloudinary.com/raggae/image/upload/v1639958293/VapeManiacs/mind_if_I_smoke_xurfnj.jpg" alt="smoker" className="image2" />
                 </article>
             </section>
         </>

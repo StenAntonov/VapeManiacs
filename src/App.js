@@ -2,12 +2,12 @@ import { Routes, Route } from 'react-router-dom';
 
 import Footer from './components/Footer';
 import Header from './components/Header';
-import HomePage from './components/HomePage/HomePage';
+import HomePage from './components/HomePage';
 import Blog from './components/Blog';
-import Catalog from './components/VapeCatalog/VapeCatalog';
+import Catalog from './components/VapeCatalog';
 import Create from './components/Create';
 import MyVapes from './components/MyVapes';
-import Details from './components/Details/Details';
+import Details from './components/Details';
 import Edit from './components/Edit';
 import AboutUs from './components/AboutUs';
 import Login from './components/Login';

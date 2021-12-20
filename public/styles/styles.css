@@ -23,8 +23,8 @@
 
 body {
     margin: 0;
-    font-family: 'Roboto', sans-serif;
-    background-image: url('../images/Smoke\ 1.png');
+    font-family: Helvetica, sans-serif;
+    background-image: url('https://res.cloudinary.com/raggae/image/upload/v1639958295/VapeManiacs/Smoke_1_elvfpn.png');
     background-repeat: no-repeat;
     background-size: cover;
 }

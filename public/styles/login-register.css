@@ -7,6 +7,9 @@
     box-sizing: border-box;
     background: #3e4443;
     box-shadow: 0px 0px 30px 3px #ecf0f3;
+    border-top-left-radius: 140px;
+    border-bottom-right-radius: 140px;
+    border: 8px solid darkgrey;
 }
 
 #register-page {
@@ -18,6 +21,9 @@
     box-sizing: border-box;
     background: #3e4443;
     box-shadow: 0px 0px 30px 3px #ecf0f3;
+    border-top-left-radius: 140px;
+    border-bottom-right-radius: 140px;
+    border: 8px solid darkgrey;
 }
 
 .container {
@@ -29,8 +35,8 @@
     width: 140px;
     border-radius: 27%;
     position: relative;
-    top: 16px;
-    left: 20px;
+    top: 22px;
+    left: 30px;
 }
 
 .brand-logo-container {

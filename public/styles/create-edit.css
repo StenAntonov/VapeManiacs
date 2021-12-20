@@ -9,6 +9,9 @@
     text-align: center;
     background: #3e4443;
     box-shadow: 0px 0px 30px 3px #ecf0f3;
+    border-top-left-radius: 140px;
+    border-bottom-right-radius: 140px;
+    border: 8px solid darkgrey;
 }
 
 input[type="text"] {

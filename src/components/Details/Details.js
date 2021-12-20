@@ -1,13 +1,13 @@
-import { Link } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import * as vapeService from '../../services/vapeService.js';
 
 const Details = () => {
-    const vapeId = window.location.pathname.split('/').pop();
+    const { id } = useParams();
     const [vape, setVape] = useState({});
 
     useEffect(async () => {
-        let result = await vapeService.getOne(vapeId);
+        let result = await vapeService.getOne(id);
 
         setVape(result);
     }, []);
@@ -22,7 +22,7 @@ const Details = () => {
                     <h1 className='vape-details-h1'>{vape.maker}</h1>
                     <h2 className='vape-details-h2'>{vape.model}</h2>
                     <p className="type">Battery:</p>
-                    <span className="batteries">{vape.battery}</span>
+                    <span className="batteries">{vape.batteryType}</span>
                 </div>
                 <p className="text">{vape.description}</p>
 

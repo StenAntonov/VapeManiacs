@@ -1,25 +1,27 @@
 import { useState } from 'react';
 import { useEffect } from 'react';
 import * as vapeService from '../../services/vapeService.js';
-import VapeCard from './VapeCard';
+import MyVapeCard from './MyVapeCard';
 
-const VapeCatalog = () => {
+const MyVapes = () => {
+    const userId = sessionStorage.getItem('userId');
     const [vapes, setVapes] = useState([]);
 
     useEffect(() => {
-        vapeService.getAll()
+        vapeService.getMyVapes(userId)
         .then(result => {
-            setVapes(Object.values(result));
+            setVapes(result);
         });
     },[]);
 
+
     return (
-        <section className="catalog-page">
-            <h1>Vapes Catalog</h1>
+        <section className="my-vapes-page">
+            <h1>My Vapes</h1>
 
             <section className="catalog-page-vapes">
             { vapes.length > 0 
-            ? vapes.map(x => <VapeCard vape={x} key={x._id}/>) 
+            ? vapes.map(x => <MyVapeCard vape={x} key={x._id}/>) 
             : <h3 className="no-articles">No vapes yet</h3>
             }   
             </section>
@@ -28,4 +30,4 @@ const VapeCatalog = () => {
     );
 };
 
-export default VapeCatalog;
+export default MyVapes;
