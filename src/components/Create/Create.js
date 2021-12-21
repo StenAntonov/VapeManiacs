@@ -1,8 +1,11 @@
 import { useNavigate } from 'react-router-dom';
+import { useContext } from 'react';
+import { AuthContext } from '../../contexts/AuthContext';
 
 import * as vapeService from '../../services/vapeService';
 
 const Create = () => {
+    const { user } = useContext(AuthContext);
     const navigate = useNavigate();
 
     const onVapeCreate = (e) => {
@@ -23,7 +26,7 @@ const Create = () => {
             batteryType,
             imageUrl,
             description
-        })
+        }, user.accessToken)
             .then(result => {
                 navigate('/catalog');
             });

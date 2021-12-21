@@ -1,5 +1,7 @@
+import { useState } from 'react';
 import { Routes, Route } from 'react-router-dom';
 
+import { AuthContext } from './contexts/AuthContext';
 import Footer from './components/Footer';
 import Header from './components/Header';
 import HomePage from './components/HomePage';
@@ -16,7 +18,18 @@ import Contacts from './components/Contacts';
 import NotFound from './components/NotFound';
 
 function App() {
+    const [user, setUser] = useState({
+        _id: '',
+        email: '',
+        accessToken: ''
+    });
+
+    const login = (authData => {
+        setUser(authData);
+    });
+
     return (
+        <AuthContext.Provider value={{user, login}}>
         <div id="container">
             <Header />
 
@@ -39,6 +52,7 @@ function App() {
             
             <Footer />
         </div>
+        </AuthContext.Provider>
     );
 }
 

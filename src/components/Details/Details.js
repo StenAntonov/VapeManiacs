@@ -1,8 +1,12 @@
 import { Link, useParams } from 'react-router-dom';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useContext } from 'react';
+import { AuthContext } from '../../contexts/AuthContext.js';
+import { useNavigate } from 'react-router-dom';
 import * as vapeService from '../../services/vapeService.js';
 
 const Details = () => {
+    const navigate = useNavigate();
+    const { user } = useContext(AuthContext);
     const { id } = useParams();
     const [vape, setVape] = useState({});
 
@@ -12,6 +16,17 @@ const Details = () => {
         setVape(result);
     }, []);
 
+    const deleteHandler = (e) => {
+        e.preventDefault();
+
+        vapeService.del(vape._id, user.accessToken)
+            .then(() => {
+                navigate('/');
+            });
+    } ;
+    
+    
+    // const editHandler = 
 
     return (
         <section id="vape-details">
@@ -22,14 +37,17 @@ const Details = () => {
                     <h1 className='vape-details-h1'>{vape.maker}</h1>
                     <h2 className='vape-details-h2'>{vape.model}</h2>
                     <p className="type">Battery:</p>
-                    <span className="batteries">{vape.batteryType}</span>
+                    <span className="batteries">{vape.battery}</span>
                 </div>
                 <p className="text">{vape.description}</p>
 
+                {user._id && user._id === vape._ownerId ?
                 <div className="buttons">
-                    <Link to="/edit" className="button-edit">Edit</Link>
-                    <Link to="/delete" className="button-delete">Delete</Link>
+                    <Link to="/edit" onClick={''} className="button-edit">Edit</Link>
+                    <Link to="/delete" onClick={deleteHandler} className="button-delete">Delete</Link>
                 </div>
+                : ''
+                }
             </div>
         </section>
     );

@@ -27,7 +27,8 @@
     margin-right: 50px;
 }
 
-.header-nav-ul {
+.header-nav-ul, 
+#guest, #user {
     display: flex;
     list-style-type: none;
 }

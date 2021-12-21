@@ -1,10 +1,23 @@
 import { Link } from 'react-router-dom';
-// import * as vapeService from '../services/vapeService.js';
+import { useContext } from 'react';
+import { AuthContext } from '../../contexts/AuthContext';
 
 const Header = () => {
-    // const onLogout = () => {
-    //     await vapeService.logout();
-    // };
+    const { user } = useContext(AuthContext);
+
+    let guestNavigation = (
+        <div id="guest">
+            <li className="header-nav-ul-li-btn"><Link to="/login"><button className="header-nav-btn">Login / Register</button></Link></li>
+        </div>
+    );
+
+    let userNavigation = (
+        <div id="user">
+            <li className="header-nav-ul-li"><Link to="/create" className="header-nav-ul-li-a">Create</Link></li>
+            <li className="header-nav-ul-li"><Link to="/my-vapes" className="header-nav-ul-li-a">My Vapes</Link></li>
+            <li className="header-nav-ul-li-btn"><Link to="/login"><button className="header-nav-btn">Logout</button></Link></li>
+        </div>
+    );
     return (
         <header className="header">
             <article className="header-logo">
@@ -12,13 +25,15 @@ const Header = () => {
             </article>
             <nav className="header-nav">
                 <ul className="header-nav-ul">
+                    <li className="header-nav-ul-li"><Link to="/" className="header-nav-ul-li-a">Home</Link></li>
                     <li className="header-nav-ul-li"><Link to="/blog" className="header-nav-ul-li-a">Blog</Link></li>
                     <li className="header-nav-ul-li"><Link to="/catalog" className="header-nav-ul-li-a">Catalog</Link></li>
-                    <li className="header-nav-ul-li"><Link to="/create" className="header-nav-ul-li-a">Create</Link></li>
-                    <li className="header-nav-ul-li"><Link to="/my-vapes" className="header-nav-ul-li-a">My Vapes</Link></li>
                     <li className="header-nav-ul-li"><Link to="/about-us" className="header-nav-ul-li-a">About Us</Link></li>
-                    <li className="header-nav-ul-li-btn"><Link to="/login"><button className="header-nav-btn">Login / Register</button></Link></li>
-                    <li className="header-nav-ul-li-btn"><Link to="/login"><button className="header-nav-btn">Logout</button></Link></li>
+
+                    {user.email 
+                    ? userNavigation
+                    : guestNavigation}
+
                 </ul>
             </nav>
         </header>
