@@ -22,12 +22,15 @@ const Details = () => {
 
     const deleteHandler = (e) => {
         e.preventDefault();
-
-        vapeService.del(vape._id, user.accessToken)
-            .then(() => {
-                showNotification('Vape successfully deleted!', types.success);
-                navigate('/catalog');
-            });
+        // eslint-disable-next-line no-restricted-globals
+        const confirmation = confirm('Are you sure want to delete this vape?');
+        if (confirmation) {
+            vapeService.del(vape._id, user.accessToken)
+                .then(() => {
+                    showNotification('Vape successfully deleted!', types.success);
+                    navigate('/catalog');
+                });
+        };
     };
 
     return (
