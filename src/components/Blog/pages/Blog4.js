@@ -1,4 +1,7 @@
-const Blog = () => {
+import { Link } from "react-router-dom";
+
+const Blog4 = () => {
+
     return (
         <>
             <section className="first">
@@ -33,39 +36,7 @@ const Blog = () => {
                     <img src="https://res.cloudinary.com/raggae/image/upload/v1639958298/VapeManiacs/Smoker_2_thmhtt.png" alt="smoker" className="image2" />
                 </article>
             </section>
-            <section className="first">
-                <article className="img">
-                    <img src="https://res.cloudinary.com/raggae/image/upload/v1639958296/VapeManiacs/Smoker_3_loy61k.png" alt="smoker" className="image" />
-                </article>
-                <article className="first-content">
-                    <article className="first-content-headings">
-                        <h1 className="first-content-heading-first">Smoking’s Effect on Teeth</h1>
-                    </article>
-                    <p className="first-content-text-first">Smoking exposes your teeth to both tobacco and nicotine. As a result, stained, yellow teeth and bad breath are likely to happen.</p>
-                    <p className="first-content-text-second">Plus, the more you smoke, the more it affects your sense of taste. What you eat and drink also affects your teeth.</p>
-                    <p className="first-content-text-third">Smoking can also lower your immune system, putting you at risk for gum disease, as well as contribute to oral cancer.</p>
-                    <article className="link">
-                        <a className="link" href="https://www.healthline.com/health/smokers-teeth">Read more...</a>
-                    </article>
-                </article>
-            </section>
-            <section className="second">
-                <article className="second-content">
-                    <article className="second-content-headings">
-                        <h1 className="second-content-heading-first">Bureaucrats, Democrats are needlessly killing a powerful anti-smoking tool </h1>
-                    </article>
-                    <p className="second-content-text-first">E-cigarettes, which deliver nicotine without tobacco or combustion, are the most important harm-reducing alternative to smoking ever developed, one that could prevent millions of premature deaths in the United States alone. Yet bureaucrats and politicians seem determined to negate that historic opportunity through regulations and taxes that threaten to cripple the industry.</p>
-                    <p className="second-content-text-second"></p>
-                    <p className="second-content-text-third"></p>
-                    <article className="link2">
-                        <a className="link2" href="https://nypost.com/2021/09/21/bureaucrats-and-dems-are-killing-a-powerful-anti-smoking-tool/">Read more...</a>
-                    </article>
-                </article>
-                <article className="img2">
-                    <img src="https://res.cloudinary.com/raggae/image/upload/v1639958301/VapeManiacs/Vaping_4_qp4miy.png" alt="smoker" className="image2" />
-                </article>
-            </section>
         </>
     );
 };
-export default Blog;
+export default Blog4;

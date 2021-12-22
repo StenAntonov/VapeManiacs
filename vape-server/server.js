@@ -1340,7 +1340,7 @@
         games: {
 
         },
-        latest: {
+        blogs: {
             
         },
 		vapes: {

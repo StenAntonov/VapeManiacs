@@ -12,8 +12,8 @@ export function getMyVapes(userId) {
         .then(res => res.json());
 }
 
-export function getLatest() {
-    return fetch(`${baseUrl}/data/latest?sortBy=_createdOn%20desc`)
+export function getBlogsCount() {
+    return fetch(`${baseUrl}/data/vapes?count`)
         .then(res => res.json());
 }
 
