@@ -55,11 +55,11 @@
 .middle-img {
     position: relative;
     z-index: 10;
-    object-fit: cover;
     width: 500px;
     height: 520px;
     left: -11px;
     top: -70px;
+    border-radius: 16px;
 }
 
 .about-us-vape-left {
@@ -67,6 +67,7 @@
     height: 380px;
     left: 25px;
     position: relative;
+    border-radius: 16px;
 }
 
 .about-us-vape-right {
@@ -74,4 +75,5 @@
     height: 380px;
     right: 35px;
     position: relative;
+    border-radius: 16px;
 }
