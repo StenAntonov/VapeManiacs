@@ -1,11 +1,77 @@
-*, *::before, *::after {
-    box-sizing: border-box;
+.about-us-info {
+    background-color: rgba(12, 9, 9, 0.479);
+    padding-top: 1px;
+    margin-top: 36px;
+    padding-bottom: 35px;
+    margin-left: 35px;
+    margin-right: 35px;
 }
 
-body {
-    margin: 0;
-    font-family: 'Roboto', sans-serif;
-    background-image: url('../images/Smoke\ 1.png');
-    background-size: cover;
-    background-repeat: no-repeat;
+.about-us-info-heading {
+    color: #ffffff;
+    font-size: 300%;
+    font-size: 55px;
+    line-height: 1;
+    font-weight: 700;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: uppercase;
+    text-shadow: 0 2px 4.8px rgba(0, 0, 0, 0.3);
+    font-family: "Agency FB";
+    padding-top: 0;
+    text-align: center;
+    margin-top: 45px;
+    font-weight: bold;
+}
+
+.about-us-info-p {
+    color: white;
+    font-size: 21px;
+    padding-left: 200px;
+    margin-right: 22px;
+    padding-right: 200px;
+    padding-top: 21px;
+    font-weight: bold;
+}
+
+.quotte {
+    color: #99b181;
+    font-size: 25px;
+    padding-left: 200px;
+    margin-right: 22px;
+    padding-right: 200px;
+    padding-top: 21px;
+    font-weight: bold;
+}
+
+.about-us-images {
+    position: relative;
+    align-content: center;
+    height: 550px;
+    display: flex;
+    margin-top: 180px;
+}
+
+.middle-img {
+    position: relative;
+    z-index: 10;
+    object-fit: cover;
+    width: 500px;
+    height: 520px;
+    left: -11px;
+    top: -70px;
+}
+
+.about-us-vape-left {
+    width: 560px;
+    height: 380px;
+    left: 25px;
+    position: relative;
+}
+
+.about-us-vape-right {
+    width: 560px;
+    height: 380px;
+    right: 35px;
+    position: relative;
 }
