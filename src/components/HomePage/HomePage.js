@@ -9,7 +9,7 @@ const HomePage = () => {
     const [latest, setLatest] = useState([]);
 
     useEffect(() => {
-        vapeService.getLatest()
+        vapeService.getAll()
             .then(result => {
                 setLatest(result);
             });
@@ -37,7 +37,7 @@ const HomePage = () => {
                     <h1 className="latest-models">Latest Models</h1>
                     <section className='vapes'>
                         {latest.length > 0
-                            ? latest.map(x => <LatestCard vape={x} key={x._id} />)
+                            ? latest.slice(0, 3).map(x => <LatestCard vape={x} key={x._id} />)
                             : <h3 className="no-articles">No vapes yet</h3>
                         };
                     </section>

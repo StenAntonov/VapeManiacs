@@ -21,7 +21,7 @@ const Header = () => {
     return (
         <header className="header">
             <article className="header-logo">
-                <Link to="/"><img className="header-logo-img" src="/images/VapeManiacsNoBG.png" alt="VapeManiacs" /></Link>
+                <Link to="/"><img className="header-logo-img" src="https://res.cloudinary.com/raggae/image/upload/v1639958299/VapeManiacs/VapeManiacsNoBG_knqmji.png" alt="VapeManiacs" /></Link>
             </article>
             <nav className="header-nav">
                 <ul className="header-nav-ul">

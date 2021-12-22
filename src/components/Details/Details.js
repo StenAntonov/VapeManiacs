@@ -22,7 +22,7 @@ const Details = () => {
 
         vapeService.del(vape._id, user.accessToken)
             .then(() => {
-                navigate('/');
+                navigate('/catalog');
             });
     };
 

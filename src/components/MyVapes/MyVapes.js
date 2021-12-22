@@ -1,14 +1,16 @@
-import { useState } from 'react';
-import { useEffect } from 'react';
+import { useState, useEffect, useContext } from 'react';
+import { AuthContext } from '../../contexts/AuthContext';
+
 import * as vapeService from '../../services/vapeService.js';
 import MyVapeCard from './MyVapeCard';
 
 const MyVapes = () => {
-    const userId = sessionStorage.getItem('userId');
+    const { user } = useContext(AuthContext);
+    console.log(user);
     const [vapes, setVapes] = useState([]);
 
     useEffect(() => {
-        vapeService.getMyVapes(userId)
+        vapeService.getMyVapes(user._id)
         .then(result => {
             setVapes(result);
         });

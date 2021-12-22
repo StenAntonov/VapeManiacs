@@ -17,6 +17,10 @@ const Login = () => {
         let formData = new FormData(e.currentTarget);
         let email = formData.get('email');
         let password = formData.get('password');
+
+        if (email === '' || password === '') {
+            alert('All fields are required!');
+        }
         
         authService.login(email,password)
             .then((authData) => {
@@ -38,7 +42,7 @@ const Login = () => {
             <form onSubmit={onLoginHandler} id="login">
                 <div className="container">
                     <article className="brand-logo-container">
-                        <img className="brand-logo" src="/images/VapeManiacsLogo-nobg.png" alt="logo" />
+                        <img className="brand-logo" src="https://res.cloudinary.com/raggae/image/upload/v1639958298/VapeManiacs/VapeManiacsLogo-nobg_i9tetz.png" alt="logo" />
                     </article>
                     <h1>Login</h1>
                     <label htmlFor="email">Email:</label>

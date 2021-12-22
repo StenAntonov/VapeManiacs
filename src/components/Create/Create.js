@@ -18,6 +18,11 @@ const Create = () => {
         let imageUrl = formData.get('imageUrl');
         let description = formData.get('description');
 
+        if (maker === '' || model === '' || battery === '' || imageUrl === '' || description === '') {
+            alert('All fields are required!');
+            return;
+        }
+
         vapeService.create({
             maker,
             model,

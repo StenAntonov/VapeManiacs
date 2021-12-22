@@ -11,7 +11,15 @@ const Register = () => {
     const registerSubmitHandler = (e) => {
         e.preventDefault();
 
-        const {email, password} = Object.fromEntries(new FormData(e.currentTarget));
+        const {email, password, repass} = Object.fromEntries(new FormData(e.currentTarget));
+
+        if (email === '' || password === '' || repass === '') {
+            alert('All fields are required!');
+            return;
+        }else if (password !== repass) {
+            alert('Passwords don\'t match!');
+            return;
+        }
 
         authService.register(email, password)
             .then(authData => {
@@ -26,7 +34,7 @@ const Register = () => {
             <form id="register" onSubmit={registerSubmitHandler}>
                 <div className="container">
                     <article className="brand-logo-container">
-                        <img className="brand-logo" src="/images/VapeManiacsLogo-nobg.png" alt="logo" />
+                        <img className="brand-logo" src="https://res.cloudinary.com/raggae/image/upload/v1639958298/VapeManiacs/VapeManiacsLogo-nobg_i9tetz.png" alt="logo" />
                     </article>
                     <h1>Register</h1>
 
@@ -37,7 +45,7 @@ const Register = () => {
                     <input type="password" name="password" id="register-password" />
 
                     <label htmlFor="con-pass">Confirm Password:</label>
-                    <input type="password" name="confirm-password" id="confirm-password" />
+                    <input type="password" name="repass" id="repass" />
 
                     <input className="btn submit" type="submit" value="Register" />
 

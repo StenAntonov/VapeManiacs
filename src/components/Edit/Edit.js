@@ -29,6 +29,11 @@ const Edit = () => {
         let battery = formData.get('battery');
         let imageUrl = formData.get('imageUrl');
         let description = formData.get('description');
+        
+        if (maker === '' || model === '' || battery === '' || imageUrl === '' || description === '') {
+            alert('All fields are required!');
+            return;
+        }
 
         vapeService.edit({
             maker,
