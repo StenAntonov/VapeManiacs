@@ -1,7 +1,7 @@
-import { useState } from 'react';
 import { Routes, Route } from 'react-router-dom';
 
 import { AuthContext } from './contexts/AuthContext';
+import useLocalStorage from './hooks/useLocalStorage';
 import Footer from './components/Footer';
 import Header from './components/Header';
 import HomePage from './components/HomePage';
@@ -16,20 +16,27 @@ import Login from './components/Login';
 import Register from './components/Register';
 import Contacts from './components/Contacts';
 import NotFound from './components/NotFound';
+import Logout from './components/Logout';
+
+const initialAuthState = {
+    _id: '',
+    email: '',
+    accessToken: ''
+};
 
 function App() {
-    const [user, setUser] = useState({
-        _id: '',
-        email: '',
-        accessToken: ''
-    });
+    const [user, setUser] = useLocalStorage('user', initialAuthState);
 
     const login = (authData => {
         setUser(authData);
     });
 
+    const logout = () => {
+        setUser(initialAuthState);
+    };
+
     return (
-        <AuthContext.Provider value={{user, login}}>
+        <AuthContext.Provider value={{user, login, logout}}>
         <div id="container">
             <Header />
 
@@ -39,9 +46,10 @@ function App() {
                     <Route path="/blog" element={<Blog />} />
                     <Route path="/catalog" element={<Catalog />} />
                     <Route path="/create" element={<Create />} />
-                    <Route path="/edit" element={<Edit />} />
+                    <Route path="/edit/:id" element={<Edit />} />
                     <Route path="/about-us" element={<AboutUs />} />
                     <Route path="/login" element={<Login />} />
+                    <Route path="/logout" element={<Logout />} />
                     <Route path="/register" element={<Register />} />
                     <Route path="/contacts" element={<Contacts />} />
                     <Route path="/details/:id" element={<Details />} />

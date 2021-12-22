@@ -31,6 +31,16 @@ export const create = async (vapeData, token) => {
 
     return result;
 };
+export const edit = (vapeData, token, id) => {
+    return fetch(`${baseUrl}/data/vapes/${id}`, {
+        method: 'PUT',
+        headers: {
+            'content-type': 'application/json',
+            'X-Authorization': token
+        },
+        body: JSON.stringify(vapeData)
+    });
+};
 
 export const del = (vapeId, token) => {
     return fetch(`${baseUrl}/data/vapes/${vapeId}`, {

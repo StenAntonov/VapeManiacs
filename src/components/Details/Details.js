@@ -10,11 +10,12 @@ const Details = () => {
     const { id } = useParams();
     const [vape, setVape] = useState({});
 
-    useEffect(async () => {
-        let result = await vapeService.getOne(id);
-
-        setVape(result);
-    }, []);
+    useEffect(() => {
+        vapeService.getOne(id)
+            .then(result =>
+                setVape(result)
+            );
+    }, [id]);
 
     const deleteHandler = (e) => {
         e.preventDefault();
@@ -23,10 +24,7 @@ const Details = () => {
             .then(() => {
                 navigate('/');
             });
-    } ;
-    
-    
-    // const editHandler = 
+    };
 
     return (
         <section id="vape-details">
@@ -42,11 +40,11 @@ const Details = () => {
                 <p className="text">{vape.description}</p>
 
                 {user._id && user._id === vape._ownerId ?
-                <div className="buttons">
-                    <Link to="/edit" onClick={''} className="button-edit">Edit</Link>
-                    <Link to="/delete" onClick={deleteHandler} className="button-delete">Delete</Link>
-                </div>
-                : ''
+                    <div className="buttons">
+                        <Link to={`/edit/${id}`} className="button-edit">Edit</Link>
+                        <Link to="/delete" onClick={deleteHandler} className="button-delete">Delete</Link>
+                    </div>
+                    : ''
                 }
             </div>
         </section>

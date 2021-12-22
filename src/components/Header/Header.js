@@ -15,7 +15,7 @@ const Header = () => {
         <div id="user">
             <li className="header-nav-ul-li"><Link to="/create" className="header-nav-ul-li-a">Create</Link></li>
             <li className="header-nav-ul-li"><Link to="/my-vapes" className="header-nav-ul-li-a">My Vapes</Link></li>
-            <li className="header-nav-ul-li-btn"><Link to="/login"><button className="header-nav-btn">Logout</button></Link></li>
+            <li className="header-nav-ul-li-btn"><Link to="/logout"><button className="header-nav-btn">Logout</button></Link></li>
         </div>
     );
     return (
@@ -28,7 +28,6 @@ const Header = () => {
                     <li className="header-nav-ul-li"><Link to="/" className="header-nav-ul-li-a">Home</Link></li>
                     <li className="header-nav-ul-li"><Link to="/blog" className="header-nav-ul-li-a">Blog</Link></li>
                     <li className="header-nav-ul-li"><Link to="/catalog" className="header-nav-ul-li-a">Catalog</Link></li>
-                    <li className="header-nav-ul-li"><Link to="/about-us" className="header-nav-ul-li-a">About Us</Link></li>
 
                     {user.email 
                     ? userNavigation

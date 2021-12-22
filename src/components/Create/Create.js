@@ -14,16 +14,14 @@ const Create = () => {
 
         let maker = formData.get('maker');
         let model = formData.get('model');
-        let batteryType = formData.get('battery-type');
+        let battery = formData.get('battery');
         let imageUrl = formData.get('imageUrl');
         let description = formData.get('description');
-
-        console.log(maker, model, batteryType, imageUrl, description);
 
         vapeService.create({
             maker,
             model,
-            batteryType,
+            battery,
             imageUrl,
             description
         }, user.accessToken)
@@ -45,7 +43,7 @@ const Create = () => {
                 <input type="text" id="model" name="model" placeholder="Enter vape model..." />
 
                 <label htmlFor="battery">Battery:</label>
-                <input type="text" id="battery-type" name="battery-type" placeholder="External" />
+                <input type="text" id="battery" name="battery" placeholder="External" />
 
                 <label htmlFor="game-img">Image:</label>
                 <input type="text" id="imageUrl" name="imageUrl" placeholder="Upload a photo..." />

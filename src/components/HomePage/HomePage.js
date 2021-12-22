@@ -21,6 +21,8 @@ const HomePage = () => {
                 <article className="smoking-dead-message">
                     <h2>Smoking is <span className="dead">Dead</span></h2>
                     <h3>Vaping is the future</h3>
+                    <h2>And the future is <span className="dead">now</span></h2>
+
                 </article>
                 <article className="blog-pic">
                     <Carousel />
