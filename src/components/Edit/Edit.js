@@ -2,11 +2,13 @@ import { useParams } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 import { useState, useEffect, useContext } from 'react';
 import { AuthContext } from '../../contexts/AuthContext';
+import { types, NotificationContext } from '../../contexts/NotificationContext';
 
 import * as vapeService from '../../services/vapeService';
 
 const Edit = () => {
     const navigate = useNavigate();
+    const { showNotification } = useContext(NotificationContext);
     const { user } = useContext(AuthContext);
     const { id } = useParams();
     const [vape, setVape] = useState({});
@@ -31,8 +33,7 @@ const Edit = () => {
         let description = formData.get('description');
         
         if (maker === '' || model === '' || battery === '' || imageUrl === '' || description === '') {
-            alert('All fields are required!');
-            return;
+            return showNotification('All fields are required!', types.warning);
         }
 
         vapeService.edit({
@@ -43,6 +44,7 @@ const Edit = () => {
             description
         }, user.accessToken, id)
             .then(() => {
+                showNotification('Vape successfully edited!', types.success);
                 navigate(`/details/${id}`);
             });
     };

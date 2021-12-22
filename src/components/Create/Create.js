@@ -1,11 +1,13 @@
 import { useNavigate } from 'react-router-dom';
 import { useContext } from 'react';
 import { AuthContext } from '../../contexts/AuthContext';
+import { types, NotificationContext } from '../../contexts/NotificationContext';
 
 import * as vapeService from '../../services/vapeService';
 
 const Create = () => {
     const { user } = useContext(AuthContext);
+    const { showNotification } = useContext(NotificationContext);
     const navigate = useNavigate();
 
     const onVapeCreate = (e) => {
@@ -19,8 +21,7 @@ const Create = () => {
         let description = formData.get('description');
 
         if (maker === '' || model === '' || battery === '' || imageUrl === '' || description === '') {
-            alert('All fields are required!');
-            return;
+            return showNotification('All fields are required!', types.warning);
         }
 
         vapeService.create({
@@ -31,6 +32,7 @@ const Create = () => {
             description
         }, user.accessToken)
             .then(result => {
+                showNotification('Vape successfully created!', types.success);
                 navigate('/catalog');
             });
 

@@ -1,25 +1,23 @@
 import { useState } from "react";
 
 const Modal = () => {
-    const [state, setState] = useState(state= false );
-    return(
-
-    );
+    const [state, setState] = useState();
+    state = { show: false }
+    
+    const showModal = (e) => {
+      setState({ show: true });
+    }
+    
+    const hideModal = () => {
+      setState({ show: false });
+    }
+      return(
+      );
 };
 
 export default Modal;
 
-    state = { show: false }
-  
-    showModal = () => {
-      this.setState({ show: true });
-    }
     
-    hideModal = () => {
-      this.setState({ show: false });
-    }
-      
-    render() {
       return (
         <main>
           <h1>React Modal</h1>

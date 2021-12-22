@@ -1,11 +1,14 @@
 import { Link, useParams } from 'react-router-dom';
 import { useState, useEffect, useContext } from 'react';
 import { AuthContext } from '../../contexts/AuthContext.js';
+import { types, NotificationContext } from '../../contexts/NotificationContext';
+
 import { useNavigate } from 'react-router-dom';
 import * as vapeService from '../../services/vapeService.js';
 
 const Details = () => {
     const navigate = useNavigate();
+    const { showNotification } = useContext(NotificationContext);
     const { user } = useContext(AuthContext);
     const { id } = useParams();
     const [vape, setVape] = useState({});
@@ -22,6 +25,7 @@ const Details = () => {
 
         vapeService.del(vape._id, user.accessToken)
             .then(() => {
+                showNotification('Vape successfully deleted!', types.success);
                 navigate('/catalog');
             });
     };

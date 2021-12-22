@@ -2,10 +2,12 @@ import { Link } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 import { useContext } from 'react';
 import { AuthContext } from '../../contexts/AuthContext';
+import { types, NotificationContext } from '../../contexts/NotificationContext';
 import * as authService from '../../services/authService';
 
 const Register = () => {
     const navigate = useNavigate();
+    const { showNotification } = useContext(NotificationContext);
     const { login } = useContext(AuthContext);
 
     const registerSubmitHandler = (e) => {
@@ -14,17 +16,15 @@ const Register = () => {
         const {email, password, repass} = Object.fromEntries(new FormData(e.currentTarget));
 
         if (email === '' || password === '' || repass === '') {
-            alert('All fields are required!');
-            return;
+            return showNotification('All fields are required!', types.warning);
         }else if (password !== repass) {
-            alert('Passwords don\'t match!');
-            return;
+            return showNotification('Passwords don\'t match!', types.warning);
         }
 
         authService.register(email, password)
             .then(authData => {
                 login(authData);
-
+                showNotification('You signed up successfully!', types.success);
                 navigate('/');
             });
     };

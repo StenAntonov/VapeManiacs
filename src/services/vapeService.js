@@ -12,7 +12,7 @@ export function getMyVapes(userId) {
         .then(res => res.json());
 }
 
-export function getBlogsCount() {
+export function getVapesCount() {
     return fetch(`${baseUrl}/data/vapes?count`)
         .then(res => res.json());
 }

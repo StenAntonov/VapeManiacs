@@ -2,12 +2,12 @@ import { Link } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 import { useContext } from 'react';
 import { AuthContext } from '../../contexts/AuthContext';
+import { types, NotificationContext } from '../../contexts/NotificationContext';
 
 import * as authService from '../../services/authService';
 
-
-
 const Login = () => {
+    const { showNotification } = useContext(NotificationContext);
     const { login } = useContext(AuthContext);
     const navigate = useNavigate();
 
@@ -19,7 +19,7 @@ const Login = () => {
         let password = formData.get('password');
 
         if (email === '' || password === '') {
-            alert('All fields are required!');
+            return showNotification('All fields are required!', types.warning);
         }
         
         authService.login(email,password)
@@ -28,11 +28,11 @@ const Login = () => {
                 console.log(authData);
                 
                 login(authData);
+                showNotification('You logged in successfully!', types.success);
                 navigate('/');
             })
             .catch(err => {
-                // to do notification
-                console.log(err);
+                return showNotification(err.message, types.error);
             });
 
         };
