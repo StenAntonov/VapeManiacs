@@ -14,7 +14,7 @@ const MyVapes = () => {
         .then(result => {
             setVapes(result);
         });
-    },[]);
+    },[user._id]);
 
 
     return (

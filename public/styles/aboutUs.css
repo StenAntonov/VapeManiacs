@@ -48,32 +48,37 @@
     position: relative;
     align-content: center;
     height: 550px;
-    display: flex;
-    margin-top: 180px;
+    display: inline-block;
+    margin-bottom: 55px;
 }
 
 .middle-img {
-    position: relative;
+    position: absolute;
     z-index: 10;
     width: 500px;
     height: 520px;
-    left: -11px;
-    top: -70px;
+    left: 567px;
+    top: 70px;
     border-radius: 16px;
+    object-fit: cover;
 }
 
 .about-us-vape-left {
     width: 560px;
     height: 380px;
     left: 25px;
-    position: relative;
+    position: absolute;
     border-radius: 16px;
+    object-fit: cover;
+    top: 140px;
 }
 
 .about-us-vape-right {
     width: 560px;
     height: 380px;
-    right: 35px;
-    position: relative;
+    right: -1608px;
+    position: absolute;
+    object-fit: cover;
     border-radius: 16px;
+    top: 140px;
 }

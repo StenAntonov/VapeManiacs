@@ -3,7 +3,6 @@ import { useContext, useEffect } from 'react';
 import { AuthContext } from '../../contexts/AuthContext';
 import { types, NotificationContext } from '../../contexts/NotificationContext';
 
-
 import * as authService from '../../services/authService';
 
 const Logout = () => {

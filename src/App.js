@@ -1,8 +1,6 @@
 import { Routes, Route } from 'react-router-dom';
 
-import { AuthContext } from './contexts/AuthContext';
 import { NotificationProvider } from './contexts/NotificationContext';
-import useLocalStorage from './hooks/useLocalStorage';
 import Footer from './components/Footer';
 import Header from './components/Header';
 import HomePage from './components/HomePage';
@@ -19,26 +17,12 @@ import Contacts from './components/Contacts';
 import NotFound from './components/NotFound';
 import Logout from './components/Logout';
 import Notification from './components/Notification/Notification';
-
-const initialAuthState = {
-    _id: '',
-    email: '',
-    accessToken: ''
-};
+import { AuthProvider } from './contexts/AuthContext';
 
 function App() {
-    const [user, setUser] = useLocalStorage('user', initialAuthState);
-
-    const login = (authData => {
-        setUser(authData);
-    });
-
-    const logout = () => {
-        setUser(initialAuthState);
-    };
 
     return (
-        <AuthContext.Provider value={{ user, login, logout }}>
+        <AuthProvider>
             <NotificationProvider>
 
                 <div id="container">
@@ -66,7 +50,7 @@ function App() {
                     <Footer />
                 </div>
             </NotificationProvider>
-        </AuthContext.Provider>
+        </AuthProvider>
     );
 }
 

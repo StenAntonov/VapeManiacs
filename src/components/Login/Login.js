@@ -32,7 +32,7 @@ const Login = () => {
                 navigate('/');
             })
             .catch(err => {
-                return showNotification(err.message, types.error);
+                return showNotification('Username and password don\'t match!', types.error);
             });
 
         };

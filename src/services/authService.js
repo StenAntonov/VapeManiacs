@@ -16,6 +16,7 @@ export async function login(email,password) {
     }else {
         throw result.message;
     }
+
 };
 
 export async function register(email,password) {
