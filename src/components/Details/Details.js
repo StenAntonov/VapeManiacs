@@ -1,6 +1,6 @@
 import { Link, useParams } from 'react-router-dom';
 import { useState, useEffect, useContext } from 'react';
-import { AuthContext } from '../../contexts/AuthContext.js';
+import { useAuthContext } from '../../contexts/AuthContext.js';
 import { types, NotificationContext } from '../../contexts/NotificationContext';
 
 import { useNavigate } from 'react-router-dom';
@@ -9,7 +9,7 @@ import * as vapeService from '../../services/vapeService.js';
 const Details = () => {
     const navigate = useNavigate();
     const { showNotification } = useContext(NotificationContext);
-    const { user } = useContext(AuthContext);
+    const { user } = useAuthContext();
     const { id } = useParams();
     const [vape, setVape] = useState({});
 

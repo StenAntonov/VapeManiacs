@@ -1,12 +1,12 @@
 import { useNavigate } from 'react-router-dom';
 import { useContext } from 'react';
-import { AuthContext } from '../../contexts/AuthContext';
+import { useAuthContext } from '../../contexts/AuthContext';
 import { types, NotificationContext } from '../../contexts/NotificationContext';
 
 import * as vapeService from '../../services/vapeService';
 
 const Create = () => {
-    const { user } = useContext(AuthContext);
+    const { user } = useAuthContext();
     const { showNotification } = useContext(NotificationContext);
     const navigate = useNavigate();
 

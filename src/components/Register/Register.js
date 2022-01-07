@@ -1,14 +1,14 @@
 import { Link } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 import { useContext } from 'react';
-import { AuthContext } from '../../contexts/AuthContext';
+import { useAuthContext } from '../../contexts/AuthContext';
 import { types, NotificationContext } from '../../contexts/NotificationContext';
 import * as authService from '../../services/authService';
 
 const Register = () => {
     const navigate = useNavigate();
     const { showNotification } = useContext(NotificationContext);
-    const { login } = useContext(AuthContext);
+    const { login } = useAuthContext();
 
     const registerSubmitHandler = (e) => {
         e.preventDefault();

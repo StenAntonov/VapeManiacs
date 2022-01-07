@@ -1,12 +1,11 @@
 import { useState, useEffect, useContext } from 'react';
-import { AuthContext } from '../../contexts/AuthContext';
+import { useAuthContext } from '../../contexts/AuthContext';
 
 import * as vapeService from '../../services/vapeService.js';
 import MyVapeCard from './MyVapeCard';
 
 const MyVapes = () => {
-    const { user } = useContext(AuthContext);
-    console.log(user);
+    const { user } = useAuthContext();
     const [vapes, setVapes] = useState([]);
 
     useEffect(() => {

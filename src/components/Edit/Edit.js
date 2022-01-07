@@ -1,7 +1,7 @@
 import { useParams } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 import { useState, useEffect, useContext } from 'react';
-import { AuthContext } from '../../contexts/AuthContext';
+import { useAuthContext } from '../../contexts/AuthContext';
 import { types, NotificationContext } from '../../contexts/NotificationContext';
 
 import * as vapeService from '../../services/vapeService';
@@ -9,7 +9,7 @@ import * as vapeService from '../../services/vapeService';
 const Edit = () => {
     const navigate = useNavigate();
     const { showNotification } = useContext(NotificationContext);
-    const { user } = useContext(AuthContext);
+    const { user } = useAuthContext();
     const { id } = useParams();
     const [vape, setVape] = useState({});
     
