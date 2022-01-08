@@ -1,4 +1,4 @@
-/* .modal {
+.modal {
     position: fixed;
     top: 0;
     left: 0;
@@ -10,17 +10,104 @@
 .modal-main {
     position: fixed;
     background: white;
-    width: 80%;
+    width: auto;
     height: auto;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    border-radius: 30px;
 }
 
-.display-block {
-    display: block;
+.modal-title {
+    color: black;
+    margin-top: 5px;
+    font-size: 40px;
+    font-weight: bolder;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    padding-bottom: 0;
 }
 
-.display-none {
-    display: none;
-} */
+.modal-question {
+    color: black;
+    font-size: 20px;
+    font-family: Helvetica, sans-serif;
+    text-align: center;
+}
+
+.modal-buttons {
+    text-align: center;
+    background-color: #fd5454;
+    font-size: 21px;
+    color: rgb(255, 255, 255);
+    border-radius: 16px;
+    padding: 5px 20px;
+    width: 110px;
+    height: 40px;
+}
+
+.modal-buttons:hover {
+    background-color: rgb(192, 129, 117);
+    color: white;
+}
+
+.no {
+    margin-right: 50px;
+}
+
+.modal-footer {
+    text-align: center;
+}
+
+.modal-vape {
+    background-color: #fff;
+    display: flex;
+    max-width: 100%;
+    overflow: hidden;
+    width: 450px;
+    min-height: 180px;
+    height: auto;
+}
+
+.modal-vape-info {
+    position: relative;
+    width: 100%;
+    text-align: right;
+}
+
+.modal-vape-img {
+    border-radius: 50%;
+    height: 140px;
+    position: absolute;
+    top: 20px;
+    right: 275px;
+    float: right;
+    padding: 5px;
+    width: 140px;
+    border: 1px solid;
+    box-shadow: 1px 1px 15px 3px black;
+}
+
+.modal-vape-h4 {
+    font-size: 23px;
+    font-weight: 750;
+    color: #161618;
+    width: 255px;
+    margin-right: 0px;
+    margin-left: 165px;
+    padding-right: 15px;
+    text-align: center;
+}
+
+.modal-vape-h2 {
+    font-size: 34px;
+    font-weight: 750;
+    color: #161618;
+    padding-bottom: 0px;
+    width: 255px;
+    margin-top: 40px;
+    margin-right: 0px;
+    margin-left: 165px;
+    padding-right: 15px;
+    text-align: center;
+}
