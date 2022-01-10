@@ -16,7 +16,7 @@ const Logout = () => {
                 showNotification('Logged out successfully!', types.success);
                 navigate('/');
             });
-    }, []);
+    });
 
     return null;
 };

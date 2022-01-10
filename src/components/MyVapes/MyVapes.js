@@ -1,4 +1,4 @@
-import { useState, useEffect, useContext } from 'react';
+import { useState, useEffect } from 'react';
 import { useAuthContext } from '../../contexts/AuthContext';
 
 import * as vapeService from '../../services/vapeService.js';

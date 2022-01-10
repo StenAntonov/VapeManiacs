@@ -6,7 +6,6 @@ import { types, NotificationContext } from '../../contexts/NotificationContext';
 import { useNavigate } from 'react-router-dom';
 import * as vapeService from '../../services/vapeService.js';
 import Modal from '../../utils/Modal/Modal.js';
-import Footer from '../Footer/Footer.js';
 
 const Details = () => {
     const navigate = useNavigate();

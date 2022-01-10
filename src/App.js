@@ -19,7 +19,6 @@ import NotFound from './components/NotFound';
 import Logout from './components/Logout';
 import Notification from './utils/Notification/Notification';
 import ErrorBoundary from './utils/ErrorBoundary';
-import Modal from './utils/Modal/Modal';
 
 function App() {
 
