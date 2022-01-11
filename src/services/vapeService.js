@@ -1,4 +1,4 @@
-const baseUrl = 'http://localhost:3030';
+const baseUrl = 'https://vape-server.herokuapp.com' || 'http://localhost:3030';
 
 export function getAll() {
     return fetch(`${baseUrl}/data/vapes?sortBy=_createdOn%20desc`)

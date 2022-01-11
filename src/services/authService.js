@@ -1,4 +1,4 @@
-const baseUrl = 'http://localhost:3030';
+const baseUrl = 'https://vape-server.herokuapp.com' || 'http://localhost:3030';
 
 export async function login(email,password) {
     const response = await fetch(`${baseUrl}/users/login`, {
