@@ -24,7 +24,7 @@ const HomePage = () => {
                     <h2>And the future is <span className="dead">now</span></h2>
 
                 </article>
-                <article className="blog-pic">
+                <article className="carousel">
                     <Carousel />
                 </article>
                 <p className="read-more">Read more in the <Link to="/blog" className="read-more-blog">BLOG</Link> section...</p>

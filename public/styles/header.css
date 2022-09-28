@@ -67,7 +67,7 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: bolder;
 }
 
-@media all and (max-width: 1320px) {
+/* @media all and (max-width: 1320px) {
     .header {
         flex-direction: column;
         padding: 10px 40px;
@@ -84,4 +84,4 @@ h1, h2, h3, h4, h5, h6 {
     .header-nav-ul-li {
         margin: 7px 0;
     }
-}
+} */
